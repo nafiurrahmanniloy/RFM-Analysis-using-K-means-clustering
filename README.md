@@ -1,81 +1,55 @@
-RFM Analysis
+# RFM Analysis using K-means Clustering
 
-This repository contains a Jupyter Notebook dedicated to performing RFM (Recency, Frequency, Monetary) analysis, a popular customer segmentation method in marketing analytics. The notebook leverages customer transaction data to generate meaningful insights that can help businesses enhance customer retention strategies and personalize marketing efforts.
+This repository contains a Jupyter Notebook dedicated to performing RFM (Recency, Frequency, Monetary) analysis, a popular customer segmentation method in marketing analytics, combined with K-means clustering for advanced customer segmentation. The notebook leverages customer transaction data to generate meaningful insights that can help businesses enhance customer retention strategies and personalize marketing efforts.
 
-Features
+## Features
 
-Data Cleaning and Preparation: Prepares raw transactional data for analysis.
+- **Data Cleaning and Preparation**: Prepares raw transactional data for analysis.
+- **RFM Metrics Calculation**: Computes Recency, Frequency, and Monetary values for each customer.
+- **Customer Segmentation**: Uses K-means clustering to categorize customers into meaningful segments based on their RFM scores.
+- **Visualizations**: Provides charts and graphs to illustrate customer behavior patterns.
+- **Actionable Insights**: Identifies key customer groups for targeted marketing campaigns.
 
-RFM Metrics Calculation: Computes Recency, Frequency, and Monetary values for each customer.
+## Prerequisites
 
-Customer Segmentation: Assigns RFM scores and categorizes customers into meaningful segments.
+- Python 3.7 or above
+- Jupyter Notebook
 
-Visualizations: Provides charts and graphs to illustrate customer behavior patterns.
-
-Actionable Insights: Identifies key customer groups for targeted marketing campaigns.
-
-Prerequisites
-
-Python 3.7 or above
-
-Jupyter Notebook
-
-Required Libraries
-
+### Required Libraries
 Ensure the following Python libraries are installed:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
 
-pandas
 
-numpy
+## How to Use
 
-matplotlib
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nafiurrahmanniloy/RFM-Analysis-using-K-means-clustering.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd RFM-Analysis-using-K-means-clustering
+   ```
+3. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook RFM.ipynb
+   ```
+4. Follow the steps outlined in the notebook to perform the RFM analysis on your dataset.
 
-seaborn
-
-You can install the dependencies using the command:
-
-pip install -r requirements.txt
-
-How to Use
-
-Clone the repository:
-
-git clone https://github.com/yourusername/rfm-analysis.git
-
-Navigate to the project directory:
-
-cd rfm-analysis
-
-Open the Jupyter Notebook:
-
-jupyter notebook RFM.ipynb
-
-Follow the steps outlined in the notebook to perform the RFM analysis on your dataset.
-
-Example Dataset
-
+## Example Dataset
 The notebook supports transactional data in CSV format with the following columns:
+- **CustomerID**: Unique identifier for each customer.
+- **InvoiceDate**: Date of the transaction.
+- **InvoiceNo**: Unique identifier for each transaction.
+- **Amount**: Monetary value of the transaction.
 
-CustomerID: Unique identifier for each customer.
+## Outputs
+- RFM scores for each customer.
+- Customer segmentation visualizations using K-means clustering.
+- Insights and recommendations for customer targeting.
 
-InvoiceDate: Date of the transaction.
 
-InvoiceNo: Unique identifier for each transaction.
-
-Amount: Monetary value of the transaction.
-
-Outputs
-
-RFM scores for each customer.
-
-Customer segmentation visualizations.
-
-Insights and recommendations for customer targeting.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Acknowledgments
-
-Special thanks to the open-source community for providing tools and inspiration for this project.
